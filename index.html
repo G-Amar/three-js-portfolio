@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script type="module" src="/main.js"></script>
+
+    <nav>
+      <ul>
+        <li><button class="btn nav-btn" id="home">Home</button></li>
+        <li><button class="btn nav-btn" id="about">About</button></li>
+        <li><button class="btn nav-btn" id="experience">Experience</button></li>
+        <li><button class="btn nav-btn" id="skills">Skills</button></li>
+        <li><button class="btn nav-btn" id="education">Education</button></li>
+        <li><button class="btn nav-btn" id="projects">Projects</button></li>
+        <li><button class="btn nav-btn" id="awards">Awards</button></li>
+        <li><button class="btn nav-btn" id="socials">Socials</button></li>
+        <li><button class="btn nav-btn" id="end">End</button></li>
+      </ul>
+      <ul class="social-icons">
+        <li>
+          <a target="_blank" href="https://www.linkedin.com/in/amarrgupta/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        </li>
+        <li>
+          <a target="_blank" href="https://github.com/G-Amar" class="social-icon"><i class="fab fa-github"></i></a>
+        </li>
+      </ul>
+    </nav>
+    
+    <div id="container">
+
+      <canvas id="bg"></canvas>
+      
+      <main>
+        <section id="Sun">
+          <h2 class="title">Welcome to My Portfolio</h2>
+        <p>
+          Hi there! Welcome to my portfolio. I am <span class="emphasize">Amar</span>. 
+          <br><br>
+          This is an interactive solar system simulation made with <a target="_blank" href="https://threejs.org/"><b>THREE.js</b></a>.
+          <br><br>
+          Use the <b class="emphasize">MOUSEWHEEL</b> or <b class="emphasize">ARROW KEYS</b> to move back and forth!
+          <br><br><br><br>
+          <p class="bottom">
+            <i>
+              NOTE: For the best experience, use computer with Chrome or Edge.
+            </i>
+          </p>
+        </p>
+      </section>
+      <section id="Mercury">
+        <h2 class="title">
+          About Me
+        </h2>
+        <p>
+          My name is <b class="emphasize">Amar Gupta</b> and I am passionate about Software Development and Data Science.
+           I'm a Computer Science student at Ryerson University (now TMU) who loves to constantly learn new things and apply them in the real world. 
+           I always look for opportunities to challenge myself and improve my Software Development skills.
+          <h3 class="sub-heading">
+            Hobbies
+          </h3>
+          <ul>
+            <li>
+              singing
+            </li>
+            <li>
+              musical intruments
+            </li>
+            <li>
+              coding
+            </li>
+            <li>
+              sports (tennis, badminton, ping-pong)
+            </li>
+            <li>
+              technology
+            </li>
+          </ul>
+          I also love going out with friends :D
+        </p>
+      </section>
+      <section id="Venus">
+        <h2 class="title">
+          Experience
+        </h2>
+        <p>
+          <div class="job">
+            <h3 class="position">Data Scientist Co-op</h3>
+            <div class="duration">May - August 2023</div>
+            <div class="company"><i>Royal Bank of Canada</i></div>
+            <p class="description">
+              Developed an Isolation Forest Machine Learning model to detect the occurance of fraud and further link it to other fraud to uncover various fraud rings.
+              Python and SQL were heavily used.
+              <!-- <br><br> -->
+              <!-- <b>Skills:</b> Python (Pyspark, Pandas, numpy, Sklearn, matplotlib), SQL, Hadoop, Dataiku DSS, Machine Learning (Isolation Forest), Agile (Stand-up, Scrum, Kanban), JIRA/Confluence -->
+            </p>
+          </div>
+          <div class="job">
+            <h3 class="position">Research Assistant</h3>
+            <div class="duration">December 2022 - Present</div>
+            <div class="company"><i>Ryerson University (Andriy Miranskyy)</i></div>
+            <p class="description">
+              Collaborated with a team to conduct benchmarks on Large Language Models (LLMs) and determine their usefulness in the field of Software Engineering.
+            </p>
+          </div>
+          <div class="job">
+            <h3 class="position">Software Developer Co-op</h3>
+            <div class="duration">May - August 2022</div>
+            <div class="company"><i>TJ Trading Co.</i></div>
+            <p class="description">
+              Documented and optimized a codebase with 1000's of lines of code for the company's website (HTML/CSS, JavaScript, PHP, MySQL)
+              <!-- 
+                code reviews
+                documentation (lots of it)
+                JIRA/Confluence
+                Linux server that hosted the files
+                Git, with files on their server (pull/push files as normal from terminal)
+                modulating the code
+                speed/storage optimization
+                adding new features
+                HTML/CSS, JS (frontend); PHP, MySQL (backend)
+               -->
+            </p>
+          </div>
+          <div class="job">
+            <h3 class="position">IT Analyst Co-op</h3>
+            <div class="duration">June - August 2020</div>
+            <div class="company"><i>TJ Trading Co.</i></div>
+            <p class="description">
+              Automated various tasks via Python and Bash scripts. <br>
+              Troubleshooted and analyzed various software issues for company machines.
+            </p>
+          </div>
+        </p>
+      </section>
+      <section id="Earth">
+        <h2 class="title">
+          Skills
+        </h2>
+        <p>
+          I possess extensive knowledge and experience in Software Development and Data Science and am always looking to learn more!
+          
+          <details open>
+            <summary><b>Software Development</b></summary>
+            <ul>
+              <li>Version Control (Git and GitHub)</li>
+              <li>Experience with Agile Software Development</li>
+              <li>Project Management (JIRA/Confluence, Scrum, Kanban)</li>
+              <li>CI/CD (GitHub Actions)</li>
+              <li>Unit Testing and Automated Testing</li>
+              <li>Virtualization (VMs, containers (Docker))</li>
+            </ul>
+          </details>
+          
+          <details>
+            <summary><b>Web Development</b></summary>
+            <ul>
+              <li>RESTful APIs</li>
+              <li>AJAX</li>
+              <li>Frontend, Backend, Full-stack</li>
+              <li>MERN/MEAN</li>
+              <li>etc.</li>
+            </ul>
+          </details>
+          
+          <details>
+            <summary><b>Database Systems</b></summary>
+            <ul>
+              <li>SQL (Oracle and MySQL)</li>
+              <li>NoSQL (MongoDB)</li>
+              <li>FireBase</li>
+            </ul>
+          </details>
+          
+          <details>
+            <summary><b>Data Science and Analysis</b></summary>
+            <ul>
+              <li>Python (Pyspark, Hadoop, Jupyter, Pandas, Matplotlib, Sklearn)</li>
+              <li>Statistics (Probability and Statistics)</li>
+              <li>Data Preprocessing</li>
+              <li>Machine Learning (SVM, xgboost, isolation forest, decision tree, etc)</li>
+            </ul>
+          </details>
+          
+          <details>
+            <summary>
+              <b>Various Programming Languages</b>
+            </summary>
+            <ul>
+              <li>
+                C/C++
+              </li>
+              <li>
+                Python(Django, Jupyter, Pandas, Matplotlib, Sklearn)
+              </li>
+              <li>
+                SQL
+              </li>
+              <li>
+                HTML/CSS
+              </li>
+              <li>
+                JavaScript (ReactJS, NodeJS, express, Angular, TypeScript, JQuery)
+              </li>
+              <li>
+                PHP
+              </li>
+              <li>
+                Java
+              </li>
+              <li>
+                Functional Programming (Elixir, Haskell)
+              </li>
+              <li>
+                Bash Scripting      
+              </li>
+            </ul>
+          </details>
+          
+          <details>
+            <summary>
+              <b>Various Computer Science Courses</b>
+            </summary>
+            <ul>
+              <li>
+                Procedural, Object-Oriented, and Functional Programming
+              </li>
+              <li>
+                Data Structures and Algorithms
+              </li>
+              <li>
+                Operating Systems
+              </li>
+              <li>
+                Computer Organization/Architecture and Assembly
+              </li>
+              <li>
+                Software Engineering
+              </li>
+              <li>
+                AI/Machine Learning, Data Science
+              </li>
+              <li>
+                Computer Graphics
+              </li>
+              <li>
+                Computer Security
+              </li>
+              <li>
+                Networking
+              </li>
+              <li>
+                etc.
+              </li>
+            </ul>
+          </details>
+          
+          
+        </p>
+      </section>
+      <section id="Mars">
+        <h2 class="title">
+          Education
+        </h2>
+        <p>
+          <div class="edu">
+            <h3 class="school"><a target="_blank" href="https://www.torontomu.ca/">Ryerson University (now Toronto Metropolitan University)</a></h3>
+            <div class="program"><b>Honours Bachelor of Science</b>, <i>Computer Science</i></div>
+            <div class="date">September 2020 - Present (December 2023 expected)</div>
+            <div class="grade"><i><b>CGPA: 4.29/4.33</b></i></div>
+            <p class="description">
+              Excelled at both course-work and extra-curricular activities. <br><br>
+              
+              <b class="emphasize">Competitive Coding Club</b>: Senior Executive. Planned various events for club members as well as worked with others to develop and optimize various algorithms. <br><br>
+              <b class="emphasize">ICPC 2023</b>: Won 2nd place in the qualifiers to represent the school in the regional competition to compete with 300+ other participants.
+            </p>
+          </div>
+          
+        </p>
+      </section>
+      <section id="Jupiter">
+        <h2 class="title">
+          Projects
+        </h2>
+        <p>
+          <h2>
+            <a target="_blank" href="https://github.com/G-Amar">
+              <i class="fab fa-github"></i> G-Amar
+            </a>
+          </h2>
+          Visit my GitHub to see some of the things I've done.
+          <br><br>
+          Here are a few of them:
+          <br><br>
+          <div class="project">
+            <h3 class="project-name">
+              Network-Routing-Visualized
+            </h3>
+            <p class="description">
+              Visualize various routing algorithms used in computer networks (centralized and decentralized routing).
+              <ul>
+                <li>
+                  <a target="_blank" href="https://github.com/G-Amar/Network-Routing-Visualized"><i class="fab fa-github"></i> GitHub</a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://routing-visualization-aaang.netlify.app/">Go to deployment</a><br>
+                </li>
+              </ul>
+            </p>
+          </div>
+
+          <div class="project">
+            <h3 class="project-name">
+              RU-Safe
+            </h3>
+            <p class="description">
+              Chrome extention to detect and prevent opening of malicious URLs. <br>
+              Made for RUHacks2022 <i>(and won 3 categories!)</i> in collaboration with Pratyay Banerjee, Stanley Chow, Tasfiq Jasimuddin.
+              <ul>
+                <li>
+                  <a target="_blank" href="https://github.com/G-Amar/RU-Safe"><i class="fab fa-github"></i> GitHub</a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://devpost.com/software/r-u-safe">Go to Devpost submission</a><br>
+                </li>
+              </ul>
+            </p>
+          </div>
+
+          <div class="project">
+            <h3 class="project-name">
+              Robot-Attack
+            </h3>
+            <p class="description">
+              A game where you fight against oncoming robots by shooting them with a Shrink Ray (Developed with C/C++ and OpenGL)
+              <ul>
+                <li>
+                  <a target="_blank" href="https://github.com/G-Amar/OpenGL-Robot-Attack"><i class="fab fa-github"></i> GitHub</a>
+                </li>
+              </ul>
+            </p>
+          </div>
+        </p>
+      </section>
+      <section id="Saturn">
+        <h2 class="title">
+          Awards
+        </h2>
+        <p>
+          <div class="award">
+            <h3 class="award-name">RU-Hacks 2022</h3><br>
+            <div class="date">May 2022</div>
+            <i class="place">Ryerson University (now TMU)</i>
+            <p class="description">
+              Best use of Google Cloud <br>
+              Best use of DCP API <br>
+              Most Engagong Demo Video
+            </p>
+          </div>
+          <div class="award">
+            <h3 class="award-name">Dean's List</h3><br>
+            <div class="date">2020-2021, 2021-2022, 2022-2023</div>
+            <i class="place">Ryerson University (now TMU)</i>
+            <p class="description">
+            </p>
+          </div>
+          <div class="award">
+            <h3 class="award-name">Renewable Scholarship</h3><br>
+            <div class="date">2020-2021, 2021-2022, 2022-2023</div>
+            <i class="place">Ryerson University (now TMU)</i>
+            <p class="description">
+            </p>
+          </div>
+        </p>
+      </section>
+      <section id="Uranus">
+        <h2 class="title">
+          Socials
+        </h2>
+        <p>
+          Feel free to connect with me and have a chat! <br>
+          <p>
+            <h2 class="description">
+              <a target="_blank" href="https://www.linkedin.com/in/amarrgupta/">
+                <i class="fab fa-linkedin"></i> Amar Gupta<br><br>
+              </a>
+              <a target="_blank" href="https://github.com/G-Amar">
+                <i class="fab fa-github"></i> G-Amar<br><br>
+              </a>
+              <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=amargupta3327@gmail.com">
+                <i class="fa fa-envelope"></i> amargupta3327@gmail.com (opens Gmail)<br>
+              </a>
+            </h2>
+          </p>
+        </p>
+      </section>
+      <section id="Neptune">
+        <h2 class="title">
+          The End :(
+          </h2>
+          <p>
+            Thank you for coming to my website.
+            <br><br>
+            Click on the links in the navbar to go back through the pages.
+            <br><br>
+            Feel free to reach out to me for any opportunities or to collaborate together (or if you just want to talk)!
+            <br><br><br>
+            <span class="emphasize">
+              &copy; 2023 Amar Gupta. <br>
+              <i>
+                All rights reserved.
+              </i>
+            </span>
+          </p>
+        </section>
+      </main>
+    </div>
+      
+    </body>
+    </html>
+    

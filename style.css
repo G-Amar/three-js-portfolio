@@ -1,0 +1,165 @@
+
+canvas { 
+ position: fixed;
+ top: 0;
+ left: 0;
+ /* acts as background */
+}
+
+html {
+  scroll-snap-type: y mandatory;
+
+  /* prevent mobile from ruining it */
+  /* touch-action: none; */
+}
+
+body {
+  font-family: monospace;
+  font-size: 1.1em;
+}
+
+section {
+  /* each takes up the full vierport and snaps */
+  height: 100vh;
+  scroll-snap-align: start;
+  color: #00ffff;
+  padding-top: 20px;
+  overflow-y: hidden;
+}
+
+.title {
+  color: #ffffcc;
+}
+
+.position, .program, .sub-heading, .project-name, .award-name {
+  color: #ffffcc;
+}
+
+.school {
+  color: #ffffff;
+}
+
+.duration, .company, .date, .grade, .place {
+  color: #ff00ff;
+}
+
+.emphasize {
+  color: #ffccff
+}
+
+main{
+  position: absolute;
+  width: 45%;
+}
+
+@media only screen and (max-width: 600px) {
+  main{
+    width: 95%;
+  }
+}
+
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 99%;
+  height: 15px;
+  background-color: #111111;
+  color: #ffffff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: scroll;
+  overflow-y: hidden; /*prevent vertical scrolling*/
+  scrollbar-width: none;
+  /* ensure not covered */
+  z-index: 2; 
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 10px;
+  padding: 0;
+}
+
+nav ul li .btn {
+  margin-right: 10px;
+}
+
+.nav-btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.1s ease-in-out;
+}
+
+.nav-btn:hover {
+  color: #ffcc00;
+}
+
+.social-icon {
+  margin-left: 10px;
+}
+
+a:hover {
+  color: #ffcc00
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+summary {
+  color: #ffffff;
+  /* display: inline; */
+}
+
+summary:hover {
+  color: #ffcc00;
+}
+
+/* h1 {
+  font-size: 2em;
+} */
+
+/* .job {
+  margin-top: 25px;
+} */
+
+/* hide scroll-bar */
+body::-webkit-scrollbar{
+  display: none;
+}
+
+nav::-webkit-scrollbar{
+  display: none;
+}
+
+/* internet explorrer */
+body, nav {
+  -ms-overflow-style: none;
+}
+
+/* firefox */
+html, nav {
+  scrollbar-width: none;
+}
+
+
+
+details{
+  margin-top: 8px;
+}
+
+.position, .project-name, .award-name {
+  display: inline;
+}
+
+.description {
+  margin-left: 20px;
+}
